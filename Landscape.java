@@ -7,10 +7,10 @@ import java.util.Random;
 /**
 * Author: Chididebere Okafor 
 * 
-* Purpose of the class: A basic implementation of an ArrayList.
-* that provides basic operations
-* for adding and removing elements at the end of the ArrayList
-* as well as getting and setting elements at a specified index.
+* Purpose: This class represents the grid (landscape) used in Conway's Game of Life.
+* The landscape is implemented as a two-dimensional array of Cell objects.
+* Each Cell can either be alive or dead, and the landscape evolves over
+* time according to the standard Game of Life rules.
 *
 */
 public class Landscape {
@@ -278,6 +278,21 @@ public class Landscape {
             }
         }
     }
+
+    // public int getLivingCells() {
+    
+    //     int count = 0;
+
+    //     for (int r = 0; r < rows; r++) {
+    //         for (int c = 0; c < columns; c++) {
+    //             if (landscape[r][c].getAlive()) {
+    //                 count++;
+    //             }
+    //         }
+    //     }
+
+    //     return count;
+    // }
 
     public static void main(String[] args) {
 

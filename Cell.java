@@ -3,10 +3,9 @@ import java.util.ArrayList;
 /**
 * Author: Chididebere Okafor 
 * 
-* Purpose of the class: A basic implementation of an ArrayList.
-* that provides basic operations
-* for adding and removing elements at the end of the ArrayList
-* as well as getting and setting elements at a specified index.
+* Purpose: Represents a single cell in Conway's Game of Life.
+* Each cell stores whether it is alive or dead and updates its
+* state based on neighboring cells.
 *
 */
 public class Cell {
@@ -93,20 +92,8 @@ public class Cell {
      */
     @Override
     public String toString() {
-        
-        if ( getAlive() ){ // Runs if the Cell is alive
-            return "" + 1;
-        }
 
-        return "" + 0; 
+        return getAlive() ? "1" : "0"; // returns 1 as a string if true and 0 as a string otherwise
     }
 }
 
-
-
-
-// /**
-//      * Advances the current Landscape by one step. 
-//      */
-//     public void advance() {
-//     }
